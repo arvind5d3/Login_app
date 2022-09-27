@@ -63,7 +63,7 @@ class _ChatScreenState extends State<ChatScreen> {
                         text: TextSpan(
                           children: [
                             TextSpan(
-                              text: "User logged in as:" + '',
+                              text: "User logged in as :\n",
                               style: TextStyle(fontSize: 20),
                             ),
                             TextSpan(
@@ -74,7 +74,7 @@ class _ChatScreenState extends State<ChatScreen> {
                         ),
                       ),
                     ),
-                    FlatButton(
+                    TextButton(
                       onPressed: () async {
                         SharedPreferences prefs =
                             await SharedPreferences.getInstance();
